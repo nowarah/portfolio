@@ -125,6 +125,6 @@ export const aboutCards = [
   {
     icon: "👩‍🏫",
     title: "Experience",
-    subtitle: "Developer & Instructor",
+    subtitle: "Developer & Leader",
   },
 ];

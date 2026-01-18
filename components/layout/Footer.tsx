@@ -12,9 +12,7 @@ export function Footer() {
       <p className="font-mono text-gray-500">
         © {currentYear} {personalInfo.name}
       </p>
-      <p className="font-mono text-sm text-gray-600">
-        Built with Next.js & 💚
-      </p>
+    
     </footer>
   )
 }
