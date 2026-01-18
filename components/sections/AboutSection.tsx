@@ -1,8 +1,9 @@
 import { aboutCards } from '@/lib/data'
 import { SectionHeader, GlassCard } from '@/components/ui'
-import Image from 'next/image'
+
 
 export function AboutSection() {
+  const orbitTags = ['Vue', 'React', '.NET', 'PHP']
 
   return (
     <section id="about" className="min-h-screen flex items-center px-[5%] py-24">
@@ -23,9 +24,7 @@ export function AboutSection() {
             </p>
 
             <p className="text-gray-400 leading-relaxed text-lg mb-8">
-              My journey includes leading development teams, optimizing SEO performance, and
-              implementing analytics solutions. I'm also passionate about sharing knowledge through
-              teaching and mentoring upcoming developers.
+        I've built dynamic, responsive web applications with complex UI components, interactive dashboards, and real-time data visualization. My focus is on crafting pixel-perfect interfaces, optimizing render performance, managing application state, and ensuring smooth user experiences across all browsers and devices.
             </p>
 
             {/* Info Cards */}
@@ -51,16 +50,36 @@ export function AboutSection() {
               border-2 border-accent/30
               flex justify-center items-center
               animate-glow
-              overflow-hidden
-            ">
-<Image
-  src="/images/IMG_0405.jpeg"
-  alt="Nuwarah Khalafullah"
-  fill
-  className="object-cover"
-  priority
-/>
 
+            ">
+              <span className="text-8xl md:text-9xl filter grayscale-[30%]">👩‍💻</span>
+
+{/* Orbiting Tags */}
+              {orbitTags.map((tag, index) => {
+                const positions = [
+                  'top-[5%] left-1/2 -translate-x-1/2',
+                  'top-1/2 -right-4 -translate-y-1/2',
+                  'bottom-[5%] left-1/2 -translate-x-1/2',
+                  'top-1/2 -left-4 -translate-y-1/2',
+                ]
+                const delays = ['0s', '0.3s', '0.6s', '0.9s']
+
+                return (
+                  <span
+                    key={tag}
+                    className={`
+                      absolute ${positions[index]}
+                      px-4 py-2
+                      bg-dark/90 border border-accent/30 rounded-full
+                      text-xs font-mono text-accent
+                      animate-float
+                    `}
+                    style={{ animationDelay: delays[index] }}
+                  >
+                    {tag}
+                  </span>
+                )
+              })}
             </div>
           </div>
         </div>

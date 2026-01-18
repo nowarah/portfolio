@@ -44,7 +44,7 @@ export function HeroSection() {
             <ArrowRight size={20} />
           </Button>
           <Button href="#experience" variant="outline">
-            View My Work
+            Experience
           </Button>
         </div>
 

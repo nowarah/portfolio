@@ -517,14 +517,8 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.-left-4 {
-  left: -1rem;
-}
 .-left-\[100px\] {
   left: -100px;
-}
-.-right-4 {
-  right: -1rem;
 }
 .-right-\[200px\] {
   right: -200px;
@@ -540,9 +534,6 @@ video {
 }
 .bottom-\[10\%\] {
   bottom: 10%;
-}
-.bottom-\[5\%\] {
-  bottom: 5%;
 }
 .left-0 {
   left: 0px;
@@ -562,17 +553,26 @@ video {
 .top-0 {
   top: 0px;
 }
-.top-1\/2 {
-  top: 50%;
-}
 .top-2 {
   top: 0.5rem;
 }
-.top-\[5\%\] {
-  top: 5%;
-}
 .top-\[50\%\] {
   top: 50%;
+}
+.-left-4 {
+  left: -1rem;
+}
+.-right-4 {
+  right: -1rem;
+}
+.bottom-\[5\%\] {
+  bottom: 5%;
+}
+.top-1\/2 {
+  top: 50%;
+}
+.top-\[5\%\] {
+  top: 5%;
 }
 .-z-10 {
   z-index: -10;
@@ -723,10 +723,6 @@ video {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .translate-x-0 {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -735,20 +731,9 @@ video {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-@keyframes slideUp {
-
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.animate-\[slideUp_0\.8s_ease_forwards\] {
-  animation: slideUp 0.8s ease forwards;
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @keyframes float {
 
@@ -960,14 +945,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 15 / var(--tw-bg-opacity, 1));
 }
-.bg-dark\/90 {
-  background-color: rgb(10 10 15 / 0.9);
-}
 .bg-dark\/95 {
   background-color: rgb(10 10 15 / 0.95);
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-dark\/90 {
+  background-color: rgb(10 10 15 / 0.9);
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1060,10 +1045,6 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1079,6 +1060,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1134,10 +1119,6 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1211,21 +1192,6 @@ video {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(0, 212, 170, 0.3);
   }
-.\[animation-delay\:0\.2s\] {
-  animation-delay: 0.2s;
-}
-.\[animation-delay\:0\.4s\] {
-  animation-delay: 0.4s;
-}
-.\[animation-delay\:0\.6s\] {
-  animation-delay: 0.6s;
-}
-.\[animation-delay\:0\.8s\] {
-  animation-delay: 0.8s;
-}
-.\[animation-delay\:1s\] {
-  animation-delay: 1s;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 
@@ -1461,14 +1427,14 @@ body {
     line-height: 1;
   }
 
-  .md\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
-  }
-
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
   }
 }
 

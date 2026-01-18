@@ -1,15 +1,16 @@
-import { personalInfo } from '@/lib/data'
+import { personalInfo, socialLinks } from '@/lib/data'
 import { SectionHeader } from '@/components/ui'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react'
 
 interface ContactLinkProps {
   icon: React.ReactNode
   label: string
   value: string
   href?: string
+  target?: string
 }
 
-function ContactLink({ icon, label, value, href }: ContactLinkProps) {
+function ContactLink({ icon, label, value, href, target }: ContactLinkProps) {
   const content = (
     <>
       <div className="
@@ -36,7 +37,7 @@ function ContactLink({ icon, label, value, href }: ContactLinkProps) {
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <a href={href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className={className}>
         {content}
       </a>
     )
@@ -53,14 +54,14 @@ export function ContactSection() {
   return (
     <section id="contact" className="min-h-screen flex items-center px-[5%] py-24">
       <div className="max-w-3xl mx-auto w-full">
-        <SectionHeader 
+        <SectionHeader
           label="Contact"
           title="Let's Work"
           accentText="Together"
         />
 
         <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-lg">
-          I'm currently open to new opportunities and interesting projects. 
+          I'm currently open to new opportunities and interesting projects.
           Feel free to reach out if you'd like to collaborate!
         </p>
 
@@ -72,14 +73,16 @@ export function ContactSection() {
             value={personalInfo.email}
             href={`mailto:${personalInfo.email}`}
           />
-          
+
+
           <ContactLink
-            icon={<Phone className="text-accent" size={24} />}
-            label="Phone"
-            value={personalInfo.phone}
-            href={`tel:${personalInfo.phone.replace(/\s/g, '')}`}
+            icon={<Linkedin className="text-accent" size={24} />}
+            label="LinkedIn"
+            value="linkedin.com/in/nuwara"
+            href={socialLinks.linkedin}
+            target="_blank"
           />
-          
+
           <ContactLink
             icon={<MapPin className="text-accent" size={24} />}
             label="Location"

@@ -15,8 +15,7 @@ export const personalInfo = {
 };
 
 export const socialLinks = {
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  linkedin: "https://www.linkedin.com/in/nuwara/",
 };
 
 export const stats = [
@@ -114,8 +113,8 @@ export const aboutCards = [
   },
   {
     icon: "📍",
-    title: "Based in",
-    subtitle: "Spain",
+    title: "Based in Spain",
+    subtitle: "Originally from Libya",
   },
   {
     icon: "🌍",
