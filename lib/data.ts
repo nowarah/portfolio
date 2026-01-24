@@ -109,11 +109,6 @@ export const aboutCards = [
     subtitle: "Tripoli University",
   },
   {
-    icon: "📍",
-    title: "Based in Spain",
-    subtitle: "Originally from Libya",
-  },
-  {
     icon: "🌍",
     title: "Languages",
     subtitle: "Arabic, English, Spanish",
