@@ -67,12 +67,7 @@ export function ContactSection() {
 
         {/* Contact Links */}
         <div className="space-y-4">
-          <ContactLink
-            icon={<Mail className="text-accent" size={24} />}
-            label="Email"
-            value={personalInfo.email}
-            href={`mailto:${personalInfo.email}`}
-          />
+
 
 
           <ContactLink

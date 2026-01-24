@@ -7,8 +7,6 @@ export const personalInfo = {
   firstName: "Nuwarah",
   lastName: "Khalafullah",
   title: "Full Stack Developer",
-  email: "nr.khalfallah@gmail.com",
-  phone: "+34 663 58 50 48",
   location: "Spain",
   bio: "Full Stack Developer crafting scalable web applications with Reactjs, Nextjs, PHP, .NET Core, and modern technologies.",
   shortBio: "Full Stack Developer experienced in building and maintaining scalable web applications using Reactjs, PHP, .NET Core, and CMS. Skilled in API integration, SEO optimization, and analytics implementation.",
