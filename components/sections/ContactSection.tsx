@@ -78,11 +78,7 @@ export function ContactSection() {
             target="_blank"
           />
 
-          <ContactLink
-            icon={<MapPin className="text-accent" size={24} />}
-            label="Location"
-            value={personalInfo.location}
-          />
+
         </div>
       </div>
     </section>

@@ -30,8 +30,7 @@ export function HeroSection() {
         >
           {personalInfo.title} crafting{' '}
           <span className="text-accent">scalable web applications</span> with
-          Reactjs, Nextjs, PHP, .NET Core, Vue.js, and modern technologies. Based in{' '}
-          <span className="text-accent">{personalInfo.location}</span>.
+          Reactjs, Nextjs, PHP, .NET Core, Vue.js, and modern technologies.
         </p>
 
         {/* CTA Buttons */}
