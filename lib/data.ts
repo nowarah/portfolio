@@ -95,6 +95,7 @@ export const skills = {
   Databases: ["PostgreSQL", "MySQL", "Doctrine ORM"],
   "Tools & Platforms": ["Git", "GitHub", "CI/CD", "Jira", "Confluence", "npm"],
   Practices: ["SOLID Principles", "Clean Code", "DDD", "Agile/SCRUM", "Code Reviews", "SEO", "Google Analytics"],
+  Testing: ["Unit Testing", "Automation Testing"],
 };
 
 export const languages = [
