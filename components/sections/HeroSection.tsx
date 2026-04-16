@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center px-[5%] relative">
-      <div className="max-w-6xl w-full">
+      <div className="max-w-6xl w-full pb-24 md:pb-0">
         {/* Intro */}
         <p
           className="font-mono text-sm tracking-[0.2em] text-accent mb-6 animate-slideUp opacity-0"
@@ -68,8 +68,9 @@ export function HeroSection() {
 
       {/* Scroll Indicator */}
       <div className="
+        hidden md:flex
         absolute bottom-12 left-1/2 -translate-x-1/2
-        flex flex-col items-center gap-2 text-gray-500
+        flex-col items-center gap-2 text-gray-500
         animate-pulse-slow
       ">
         <span className="text-xs tracking-[0.2em]">SCROLL</span>
