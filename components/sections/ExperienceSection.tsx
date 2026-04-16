@@ -54,8 +54,8 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="min-h-screen px-[5%] py-24">
       <div className="max-w-4xl mx-auto">
-        <SectionHeader 
-          label="Experience"
+        <SectionHeader
+          label="Professional Experience"
           title="Professional"
           accentText="Journey"
         />
