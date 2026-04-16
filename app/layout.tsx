@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     title: `${personalInfo.name} | ${personalInfo.title}`,
     description: personalInfo.shortBio,
     type: 'website',
-    images: [{ width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
