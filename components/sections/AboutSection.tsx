@@ -1,5 +1,4 @@
-import { aboutCards } from '@/lib/data'
-import { SectionHeader, GlassCard } from '@/components/ui'
+import { SectionHeader } from '@/components/ui'
 
 
 export function AboutSection() {
@@ -27,18 +26,6 @@ export function AboutSection() {
               Strong background in clean code, SOLID principles, API design, and agile teamwork, with a consistent focus on performance and maintainability.
             </p>
 
-            {/* Info Cards */}
-            <div className="grid grid-cols-2 gap-4">
-              {aboutCards.map((card, index) => (
-                <GlassCard key={index} className="p-5">
-                  <div className="text-2xl mb-2">{card.icon}</div>
-                  <div className="text-sm text-gray-400 leading-snug">
-                    <div className="text-white/90">{card.title}</div>
-                    {card.subtitle}
-                  </div>
-                </GlassCard>
-              ))}
-            </div>
           </div>
 
           {/* Visual */}

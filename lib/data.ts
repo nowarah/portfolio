@@ -97,9 +97,9 @@ export const skills = {
 };
 
 export const languages = [
+  { name: "English", level: "Advanced C1" },
+  { name: "Spanish", level: "A2" },
   { name: "Arabic", level: "Native" },
-  { name: "English", level: "Fluent" },
-  { name: "Spanish", level: "Basic" },
 ];
 
 export const projects = [
@@ -244,23 +244,4 @@ export const navItems = [
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
-];
-
-// About section cards
-export const aboutCards = [
-  {
-    icon: "🎓",
-    title: "B.IT in Web Technologies",
-    subtitle: "Tripoli University",
-  },
-  {
-    icon: "🌍",
-    title: "Languages",
-    subtitle: "Arabic, English, Spanish",
-  },
-  {
-    icon: "👩‍🏫",
-    title: "Experience",
-    subtitle: "Developer & Leader",
-  },
 ];
