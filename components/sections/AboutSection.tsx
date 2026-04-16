@@ -2,8 +2,6 @@ import { SectionHeader } from '@/components/ui'
 
 
 export function AboutSection() {
-  const orbitTags = ['Javascript','Typescript', 'Reactjs', 'PHP', 'Symfony']
-
   return (
     <section id="about" className="min-h-screen flex items-center px-[5%] py-24">
       <div className="max-w-6xl w-full mx-auto">
@@ -36,37 +34,15 @@ export function AboutSection() {
               bg-gradient-to-br from-accent/20 to-accent-blue/20
               border-2 border-accent/30
               flex justify-center items-center
-              animate-glow
+              animate-glow overflow-hidden
 
             ">
-              <span className="text-8xl md:text-9xl filter grayscale-[30%]">👩‍💻</span>
+              <img
+                src="/images/IMG_3839.PNG"
+                alt="Nuwarah Khalafullah"
+                className="w-full h-full object-cover rounded-full" style={{ objectPosition: 'center 15%' }}
+              />
 
-{/* Orbiting Tags */}
-              {orbitTags.map((tag, index) => {
-                const positions = [
-                  'top-[5%] left-1/2 -translate-x-1/2',
-                  'top-1/2 -right-4 -translate-y-1/2',
-                  'bottom-[5%] left-1/2 -translate-x-1/2',
-                  'top-1/2 -left-4 -translate-y-1/2',
-                ]
-                const delays = ['0s', '0.3s', '0.6s', '0.9s']
-
-                return (
-                  <span
-                    key={tag}
-                    className={`
-                      absolute ${positions[index]}
-                      px-4 py-2
-                      bg-dark/90 border border-accent/30 rounded-full
-                      text-xs font-mono text-accent
-                      animate-float
-                    `}
-                    style={{ animationDelay: delays[index] }}
-                  >
-                    {tag}
-                  </span>
-                )
-              })}
             </div>
           </div>
         </div>
