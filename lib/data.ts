@@ -102,11 +102,146 @@ export const languages = [
   { name: "Spanish", level: "Basic" },
 ];
 
+export const projects = [
+  {
+    group: "Libyan Spider Company",
+    items: [
+      {
+        title: "Libyan Spider – Main Website",
+        description: "Corporate website for Libyan Spider.",
+        tech: ["CMS", "YOOtheme Builder", "PHP", "JavaScript", "HTML/CSS", "UIkit"],
+        url: "https://libyanspider.com/",
+      },
+      {
+        title: "Libyan Spider – Portfolio Website",
+        description: "Portfolio showcase website.",
+        tech: ["CMS", "YOOtheme Builder", "PHP", "JavaScript", "HTML/CSS", "UIkit"],
+        url: "https://art.ls.ly/",
+      },
+      {
+        title: "Libyana Mobile Phone – Main Website",
+        description: "Corporate website for Libyana Mobile Phone Company.",
+        tech: ["CMS", "YOOtheme Builder", "PHP", "JavaScript", "HTML/CSS", "UIkit"],
+        url: "https://libyana.ly/en/",
+      },
+      {
+        title: "Central Bank of Libya – Main Website",
+        description: "Official website for the Central Bank of Libya.",
+        tech: [],
+        url: "https://cbl.gov.ly/en/",
+      },
+      {
+        title: "Ministry of Tourism – Main Website",
+        description: "Official website for the Libyan Ministry of Tourism.",
+        tech: [],
+        url: "https://tourism.gov.ly/",
+      },
+      {
+        title: "Albir Platform",
+        description: "Worked as developer assistant on this platform.",
+        tech: ["Vue.js", "Nuxt.js", "PHP"],
+        url: "https://albir.ly/",
+      },
+      {
+        title: "Alqaysar Website",
+        description: "",
+        tech: [],
+        url: "https://alqaysar.ly/",
+      },
+      {
+        title: "Talent Website",
+        description: "Unique design featuring Lottie animations.",
+        tech: ["Lottie Animation"],
+        url: "https://talent.com.ly/",
+      },
+      {
+        title: "HLC Website",
+        description: "",
+        tech: [],
+        url: "https://hlc.ly/",
+      },
+      {
+        title: "Al Madina Misurata",
+        description: "",
+        tech: [],
+        url: "https://almadinamisurata.ly/",
+      },
+      {
+        title: "Toyota Mark",
+        description: "",
+        tech: [],
+        url: "https://toyotamark.ly/",
+      },
+      {
+        title: "Masarat Company Website",
+        description: "",
+        tech: [],
+        url: "https://masarat.ly/en/",
+      },
+      {
+        title: "Al Nabaa",
+        description: "",
+        tech: [],
+        url: "https://alnabaa.com.ly/",
+      },
+      {
+        title: "Attorney General Office",
+        description: "",
+        tech: [],
+        url: "https://attorneygeneral.gov.ly/",
+      },
+      {
+        title: "Post Store",
+        description: "",
+        tech: [],
+        url: "https://poststore.ly/en/",
+      },
+      {
+        title: "Taboun Store for Carpets",
+        description: "Developed a custom plugin for carpet dimension and sewing-option calculations. Code is available in the company's private GitHub.",
+        tech: ["PHP", "JavaScript", "CSS", "UIkit"],
+        url: "https://tabouncarpets.com/en",
+      },
+    ],
+  },
+  {
+    group: "Libyana Mobile Phone Company",
+    note: "All internal systems hosted in the company's private GitHub; code cannot be shared.",
+    items: [
+      {
+        title: "eSIM Dashboard",
+        description: "Internal dashboard for monitoring eSIM activations and usage, with real-time status and activity reports.",
+        tech: ["ASP.NET Core MVC", "C#", "Bootstrap", "REST APIs"],
+        url: null,
+      },
+      {
+        title: "Sales Management Dashboard",
+        description: "Analytics dashboard for product and category sales, with date filtering and export-to-PDF.",
+        tech: ["ASP.NET Core MVC", "Chart.js", "REST APIs"],
+        url: null,
+      },
+      {
+        title: "HRMS – Human Resource Management System",
+        description: "Multi-application HR system handling authentication via external API, employee data, leave management, and multi-app integration.",
+        tech: ["ASP.NET Core", "Bootstrap", "REST APIs"],
+        url: null,
+      },
+      {
+        title: "Voucher Sales Dashboard",
+        description: "Dashboard for managing voucher sales, transaction records, filtering, charts, and summary reports.",
+        tech: ["ASP.NET Core MVC", "C#", "Bootstrap", "Chart.js"],
+        url: null,
+      },
+    ],
+  },
+];
+
 // Navigation items
 export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
 ];
