@@ -22,25 +22,29 @@ A modern, responsive portfolio website built with **Next.js 14**, **TypeScript**
 ```
 portfolio/
 ├── app/
-│   ├── globals.css      # Global styles & Tailwind
-│   ├── layout.tsx       # Root layout with metadata
-│   └── page.tsx         # Main page (assembles sections)
+│   ├── globals.css              # Global styles & Tailwind
+│   ├── layout.tsx               # Root layout with metadata
+│   ├── page.tsx                 # Main page (assembles sections)
+│   ├── icon.tsx                 # Favicon (generated, N symbol)
+│   └── opengraph-image.tsx      # OG image for social sharing
 │
 ├── components/
-│   ├── layout/          # Layout components
+│   ├── layout/                  # Layout components
 │   │   ├── Navbar.tsx
 │   │   ├── Footer.tsx
 │   │   └── index.ts
 │   │
-│   ├── sections/        # Page sections
+│   ├── sections/                # Page sections (in order)
 │   │   ├── HeroSection.tsx
 │   │   ├── AboutSection.tsx
+│   │   ├── EducationSection.tsx
 │   │   ├── ExperienceSection.tsx
+│   │   ├── ProjectsSection.tsx
 │   │   ├── SkillsSection.tsx
 │   │   ├── ContactSection.tsx
 │   │   └── index.ts
 │   │
-│   └── ui/              # Reusable UI components
+│   └── ui/                      # Reusable UI components
 │       ├── Button.tsx
 │       ├── GlassCard.tsx
 │       ├── SectionHeader.tsx
@@ -48,124 +52,116 @@ portfolio/
 │       └── index.ts
 │
 ├── lib/
-│   └── data.ts          # ⭐ All portfolio content here
+│   └── data.ts                  # ⭐ All portfolio content here
 │
-└── public/              # Static assets (images, etc.)
+└── public/
+    └── images/                  # Static images (profile photo, etc.)
 ```
 
 ## ✏️ How to Edit Content
 
-**All your portfolio data is in one file: `lib/data.ts`**
+**All portfolio data lives in one file: `lib/data.ts`**
 
-### Update Personal Info
+### Personal Info
 ```typescript
 export const personalInfo = {
   name: "Your Name",
+  firstName: "First",
+  lastName: "Last",
   title: "Your Title",
-  email: "your@email.com",
-  phone: "+1 234 567 890",
-  location: "Your City, Country",
-  // ...
+  bio: "One-line bio shown in the hero section.",
+  shortBio: "Short bio used in metadata.",
+  aboutBio: "Full paragraph shown in the About section.",
+  aboutBio2: "Second paragraph shown in the About section.",
 }
 ```
 
-### Add New Experience
+### Experience
 ```typescript
 export const experiences = [
   {
     title: "Job Title",
-    company: "Company Name",
-    period: "Start - End",
+    company: "Company | City, Country",
+    period: "Month YYYY – Month YYYY",
     description: [
-      "Achievement 1",
-      "Achievement 2",
+      "Bullet point 1",
+      "Bullet point 2",
     ],
   },
-  // Add more...
 ]
 ```
 
-### Add New Skills
+### Projects
+```typescript
+export const projects = [
+  {
+    group: "Group Name",
+    note: "Optional note (e.g. private repo notice)",
+    items: [
+      {
+        title: "Project Title",
+        description: "Short description.",
+        tech: ["React", "TypeScript"],
+        url: "https://example.com", // null for private projects
+      },
+    ],
+  },
+]
+```
+
+### Skills
 ```typescript
 export const skills = {
-  "Category Name": ["Skill 1", "Skill 2", "Skill 3"],
-  // Add more categories...
+  "Category Name": ["Skill 1", "Skill 2"],
 }
+```
+
+### Education
+```typescript
+export const education = {
+  degree: "Bachelor of ...",
+  field: "Field of Study",
+  school: "University Name",
+  period: "YYYY – YYYY",
+}
+```
+
+### Languages
+```typescript
+export const languages = [
+  { name: "English", level: "Advanced C1" },
+]
 ```
 
 ## 🎨 Customization
 
 ### Colors
-Edit `tailwind.config.ts` to change the color scheme:
+Edit `tailwind.config.ts`:
 ```typescript
 colors: {
   accent: {
-    DEFAULT: '#00d4aa',  // Main accent color
-    blue: '#00a8ff',     // Secondary accent
-    pink: '#ff006e',     // Tertiary accent
+    DEFAULT: '#00d4aa',  // Main accent (teal)
+    blue: '#00a8ff',
+    pink: '#ff006e',
   },
 }
 ```
 
-### Fonts
-Update fonts in `app/globals.css`:
-```css
-@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
-```
+### Profile Photo
+Replace the image in `public/images/` and update the `src` in `components/sections/AboutSection.tsx`.
 
 ## 🔧 Adding New Sections
 
-1. Create a new component in `components/sections/`:
-   ```typescript
-   // components/sections/ProjectsSection.tsx
-   import { SectionHeader, GlassCard } from '@/components/ui'
+1. Create `components/sections/NewSection.tsx`
+2. Export from `components/sections/index.ts`
+3. Add to `app/page.tsx`
+4. Add nav entry in `lib/data.ts` → `navItems`
 
-   export function ProjectsSection() {
-     return (
-       <section id="projects" className="min-h-screen px-[5%] py-24">
-         <SectionHeader
-           label="Projects"
-           title="My"
-           accentText="Work"
-         />
-         {/* Your content */}
-       </section>
-     )
-   }
-   ```
-
-2. Export from `components/sections/index.ts`:
-   ```typescript
-   export { ProjectsSection } from './ProjectsSection'
-   ```
-
-3. Add to `app/page.tsx`:
-   ```typescript
-   import { ProjectsSection } from '@/components/sections'
-   // ...
-   <ProjectsSection />
-   ```
-
-4. Add to navigation in `lib/data.ts`:
-   ```typescript
-   export const navItems = [
-     // ...
-     { id: "projects", label: "Projects" },
-   ]
-   ```
-
-## 📦 Build for Production
+## 📦 Build & Deploy
 
 ```bash
 npm run build
 npm start
 ```
 
-## 🌐 Deployment
-
-Deploy easily to:
-- **Vercel** (recommended): Connect your GitHub repo
-- **Netlify**: Drag & drop the `.next` folder
-- **Any Node.js hosting**: Run `npm run build && npm start`
-
-
+Deploy to **Vercel** (recommended): connect your GitHub repo and it deploys automatically on every push.
