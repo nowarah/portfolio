@@ -3,7 +3,7 @@ import { SectionHeader, GlassCard } from '@/components/ui'
 
 
 export function AboutSection() {
-  const orbitTags = ['Vue', 'React', '.NET', 'PHP']
+  const orbitTags = ['Javascript','Typescript', 'Reactjs', 'PHP', 'Symfony']
 
   return (
     <section id="about" className="min-h-screen flex items-center px-[5%] py-24">
@@ -19,7 +19,7 @@ export function AboutSection() {
 
             <p className="text-gray-400 leading-relaxed text-lg mb-6">
               I'm a Full Stack Developer with a passion for building elegant, scalable web applications.
-              With expertise spanning frontend frameworks like Reactjs, Nextjs, Vue.js + Vite to backend technologies like PHP and .NET Core,
+              With expertise spanning frontend frameworks like Reactjs, Nextjs to backend technologies like PHP and Symfony,
               I bring a comprehensive approach to software development.
             </p>
 
