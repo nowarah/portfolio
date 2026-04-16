@@ -18,13 +18,13 @@ export function AboutSection() {
             />
 
             <p className="text-gray-400 leading-relaxed text-lg mb-6">
-              I'm a Full Stack Developer with a passion for building elegant, scalable web applications.
-              With expertise spanning frontend frameworks like Reactjs, Nextjs to backend technologies like PHP and Symfony,
-              I bring a comprehensive approach to software development.
+              Full Stack Developer with 4+ years of professional experience building scalable web applications using React.js,
+              Next.js, TypeScript, and PHP/Symfony. After building a solid career in Libya across frontend and fullstack roles, I
+              relocated to Spain and took the opportunity to broaden my experience through a hands-on internship at Aircury.
             </p>
 
             <p className="text-gray-400 leading-relaxed text-lg mb-8">
-        I've built dynamic, responsive web applications with complex UI components, interactive dashboards, and real-time data visualization. My focus is on crafting pixel-perfect interfaces, optimizing render performance, managing application state, and ensuring smooth user experiences across all browsers and devices.
+              Strong background in clean code, SOLID principles, API design, and agile teamwork, with a consistent focus on performance and maintainability.
             </p>
 
             {/* Info Cards */}
