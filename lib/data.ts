@@ -31,7 +31,6 @@ export const experiences = [
     description: [
       "Contributed to internal product development on a task management platform, implementing new features and resolving bugs across the full stack.",
       "Built frontend features using Next.js, React.js, and TypeScript, and backend functionality with Symfony 7 and Doctrine ORM with PostgreSQL.",
-      "Designed and consumed REST APIs following clean architecture and SOLID principles throughout.",
       "Deepened practical knowledge of Doctrine ORM and Symfony by applying them to real product challenges.",
       "Conducted self-driven code reviews to ensure code quality, maintainability, and adherence to team standards before every merge.",
     ],
