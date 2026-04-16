@@ -28,9 +28,7 @@ export function HeroSection() {
           className="text-lg md:text-xl text-gray-400 max-w-2xl mt-8 leading-relaxed animate-slideUp opacity-0"
           style={{ animationDelay: '0.6s' }}
         >
-          {personalInfo.title} crafting{' '}
-          <span className="text-accent">scalable web applications</span> with
-          JavaScript, Typescript, Reactjs, Nextjs, PHP, Symfony, and modern technologies.
+          {personalInfo.bio}
         </p>
 
         {/* CTA Buttons */}
@@ -55,8 +53,8 @@ export function HeroSection() {
           className="flex flex-wrap gap-8 md:gap-12 mt-16 animate-slideUp opacity-0"
           style={{ animationDelay: '1s' }}
         >
-          {stats.map((stat, index) => (
-            <div key={index}>
+          {stats.map((stat) => (
+            <div key={stat.label}>
               <div className="text-4xl md:text-5xl font-bold text-accent font-mono">
                 {stat.number}
               </div>

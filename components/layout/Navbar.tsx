@@ -10,23 +10,18 @@ export function Navbar() {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
+    const updateScrolled = () => setIsScrolled(window.scrollY > 50)
 
-      // Update active section based on scroll position
-      const sections = navItems.map(item => document.getElementById(item.id))
+    const updateActiveSection = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 3
-
-      sections.forEach((section) => {
-        if (section) {
-          const sectionTop = section.offsetTop
-          const sectionHeight = section.clientHeight
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            setActiveSection(section.id)
-          }
+      navItems.map(item => document.getElementById(item.id)).forEach((section) => {
+        if (section && scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.clientHeight) {
+          setActiveSection(section.id)
         }
       })
     }
+
+    const handleScroll = () => { updateScrolled(); updateActiveSection() }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -48,7 +43,7 @@ export function Navbar() {
       `}>
         {/* Logo */}
         <a href="#home" className="font-mono text-xl font-bold text-accent">
-          {personalInfo.firstName.substring(0, 1)}{personalInfo.lastName.substring(0, 1)}
+          {personalInfo.firstName[0]}{personalInfo.lastName[0]}
           <span className="text-white">.</span>
         </a>
 

@@ -1,3 +1,4 @@
+import { personalInfo } from '@/lib/data'
 import { SectionHeader } from '@/components/ui'
 
 
@@ -15,13 +16,11 @@ export function AboutSection() {
             />
 
             <p className="text-gray-400 leading-relaxed text-lg mb-6">
-              Full Stack Developer with 4+ years of professional experience building scalable web applications using React.js,
-              Next.js, TypeScript, and PHP/Symfony. After building a solid career in Libya across frontend and fullstack roles, I
-              relocated to Spain and took the opportunity to broaden my experience through a hands-on internship at Aircury.
+              {personalInfo.aboutBio}
             </p>
 
             <p className="text-gray-400 leading-relaxed text-lg mb-8">
-              Strong background in clean code, SOLID principles, API design, and agile teamwork, with a consistent focus on performance and maintainability.
+              {personalInfo.aboutBio2}
             </p>
 
           </div>

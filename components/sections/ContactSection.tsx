@@ -1,6 +1,6 @@
-import { personalInfo, socialLinks } from '@/lib/data'
+import { socialLinks } from '@/lib/data'
 import { SectionHeader } from '@/components/ui'
-import { Mail, Phone, MapPin, Linkedin } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 
 interface ContactLinkProps {
   icon: React.ReactNode
@@ -11,42 +11,30 @@ interface ContactLinkProps {
 }
 
 function ContactLink({ icon, label, value, href, target }: ContactLinkProps) {
-  const content = (
-    <>
-      <div className="
-        w-12 h-12 flex-shrink-0
-        bg-accent/10 rounded-xl
-        flex items-center justify-center
-      ">
+  const Tag = href ? 'a' : 'div'
+  const linkProps = href
+    ? { href, target, rel: target === '_blank' ? 'noopener noreferrer' : undefined }
+    : {}
+
+  return (
+    <Tag
+      {...linkProps}
+      className={`
+        flex items-center gap-4
+        p-5 md:p-6
+        glass rounded-2xl
+        transition-all duration-300
+        ${href ? 'hover:bg-accent/10 hover:border-accent/30 hover:translate-x-2 cursor-pointer' : 'cursor-default'}
+      `}
+    >
+      <div className="w-12 h-12 flex-shrink-0 bg-accent/10 rounded-xl flex items-center justify-center">
         {icon}
       </div>
       <div>
         <div className="text-xs text-gray-500 mb-1">{label}</div>
         <div className="font-mono">{value}</div>
       </div>
-    </>
-  )
-
-  const className = `
-    flex items-center gap-4
-    p-5 md:p-6
-    glass rounded-2xl
-    transition-all duration-300
-    ${href ? 'hover:bg-accent/10 hover:border-accent/30 hover:translate-x-2 cursor-pointer' : 'cursor-default'}
-  `
-
-  if (href) {
-    return (
-      <a href={href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className={className}>
-        {content}
-      </a>
-    )
-  }
-
-  return (
-    <div className={className}>
-      {content}
-    </div>
+    </Tag>
   )
 }
 
@@ -67,9 +55,6 @@ export function ContactSection() {
 
         {/* Contact Links */}
         <div className="space-y-4">
-
-
-
           <ContactLink
             icon={<Linkedin className="text-accent" size={24} />}
             label="LinkedIn"

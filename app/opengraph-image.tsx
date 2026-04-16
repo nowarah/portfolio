@@ -1,7 +1,8 @@
 import { ImageResponse } from 'next/og'
+import { personalInfo } from '@/lib/data'
 
 export const runtime = 'edge'
-export const alt = 'Nuwarah Khalafullah | Full Stack Developer'
+export const alt = `${personalInfo.name} | ${personalInfo.title}`
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -78,7 +79,7 @@ export default function OGImage() {
               letterSpacing: '-3px',
             }}
           >
-            Nuwarah
+            {personalInfo.firstName}
           </span>
           <span
             style={{
@@ -89,7 +90,7 @@ export default function OGImage() {
               letterSpacing: '-3px',
             }}
           >
-            Khalafullah
+            {personalInfo.lastName}
           </span>
           <span
             style={{
@@ -98,7 +99,7 @@ export default function OGImage() {
               marginTop: 8,
             }}
           >
-            Full Stack Developer
+            {personalInfo.title}
           </span>
           <div style={{ display: 'flex', gap: 12, marginTop: 16, flexWrap: 'wrap' }}>
             {['React.js', 'Next.js', 'TypeScript', 'PHP / Symfony'].map((tech) => (

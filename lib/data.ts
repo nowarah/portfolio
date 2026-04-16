@@ -7,8 +7,10 @@ export const personalInfo = {
   firstName: "Nuwarah",
   lastName: "Khalafullah",
   title: "Full Stack Developer",
-  bio: "Full Stack Developer crafting scalable web applications with Reactjs, Nextjs, PHP, .NET Core, and modern technologies.",
-  shortBio: "Full Stack Developer experienced in building and maintaining scalable web applications using Reactjs, PHP, .NET Core, and CMS. Skilled in API integration, SEO optimization, and analytics implementation.",
+  bio: "Full Stack Developer crafting scalable web applications with React.js, Next.js, TypeScript, PHP, Symfony, and modern technologies.",
+  shortBio: "Full Stack Developer with 4+ years of experience building scalable web applications. Strong background in clean code, SOLID principles, API design, and agile teamwork.",
+  aboutBio: "Full Stack Developer with 4+ years of professional experience building scalable web applications using React.js, Next.js, TypeScript, and PHP/Symfony. After building a solid career in Libya across frontend and fullstack roles, I relocated to Spain and took the opportunity to broaden my experience through a hands-on internship at Aircury.",
+  aboutBio2: "Strong background in clean code, SOLID principles, API design, and agile teamwork, with a consistent focus on performance and maintainability.",
 };
 
 export const socialLinks = {

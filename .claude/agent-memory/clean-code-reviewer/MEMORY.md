@@ -1,0 +1,2 @@
+- [User Role](user_role.md) — Full Stack Developer, 4+ years exp, building a personal Next.js portfolio
+- [Portfolio Project](project_portfolio.md) — Next.js 14 App Router + Tailwind, sections-based architecture, lib/data.ts as data layer

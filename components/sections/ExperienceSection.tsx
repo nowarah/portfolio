@@ -69,9 +69,9 @@ export function ExperienceSection() {
           " />
 
           {/* Experience Items */}
-          {experiences.map((exp, index) => (
+          {experiences.map((exp) => (
             <TimelineItem
-              key={index}
+              key={exp.title}
               title={exp.title}
               company={exp.company}
               period={exp.period}
