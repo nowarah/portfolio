@@ -78,21 +78,22 @@ export const education = {
 
 export const skills = {
   Frontend: [
-    "HTML & CSS",
-    "JavaScript",
-    "Vue.js + Vite",
-    "React",
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "HTML5",
+    "CSS3",
     "Tailwind CSS",
     "Bootstrap",
     "UIkit",
     "LESS/SCSS",
-    "jQuery",
+    "Figma",
   ],
-  Backend: [".NET Core MVC", "PHP", "Python", "Node.js", "RESTful APIs"],
-  "CMS & Tools": ["WordPress", "WooCommerce", "YOOtheme Builder", "ERPNext/Frappe"],
-  "Database & Data": ["MySQL", "JSON", "XML"],
-  "DevOps & Version Control": ["Git", "GitHub", "GitLab", "Shell Scripting", "npm"],
-  "Design & Analytics": ["Figma", "SEO", "Google Analytics", "Google Search Console"],
+  Backend: ["PHP", "Symfony", "Node.js", ".NET Core MVC", "Python", "RESTful APIs", "GraphQL", "Microservices"],
+  Databases: ["PostgreSQL", "MySQL", "Doctrine ORM"],
+  "Tools & Platforms": ["Git", "GitHub", "CI/CD", "Jira", "Confluence", "npm"],
+  Practices: ["SOLID Principles", "Clean Code", "DDD", "Agile/SCRUM", "Code Reviews", "SEO", "Google Analytics"],
 };
 
 export const languages = [
