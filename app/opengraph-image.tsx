@@ -54,64 +54,53 @@ export default function OGImage() {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'flex-start',
-            gap: 12,
-            padding: '0 100px',
+            alignItems: 'center',
+            gap: 24,
             zIndex: 1,
           }}
         >
-          <span
+          {/* N symbol */}
+          <div
             style={{
-              fontSize: 16,
-              letterSpacing: '0.3em',
-              color: '#00d4aa',
-              textTransform: 'uppercase',
+              width: 180,
+              height: 180,
+              background: '#0a0a0f',
+              borderRadius: 36,
+              border: '3px solid #00d4aa',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
-            Portfolio
-          </span>
-          <span
-            style={{
-              fontSize: 96,
-              fontWeight: 800,
-              color: '#ffffff',
-              lineHeight: 1,
-              letterSpacing: '-3px',
-            }}
-          >
-            {personalInfo.firstName}
-          </span>
-          <span
-            style={{
-              fontSize: 96,
-              fontWeight: 800,
-              color: '#00d4aa',
-              lineHeight: 1,
-              letterSpacing: '-3px',
-            }}
-          >
-            {personalInfo.lastName}
-          </span>
-          <span
-            style={{
-              fontSize: 28,
-              color: '#9ca3af',
-              marginTop: 8,
-            }}
-          >
+            <span
+              style={{
+                color: '#00d4aa',
+                fontSize: 110,
+                fontWeight: 800,
+                lineHeight: 1,
+              }}
+            >
+              N
+            </span>
+          </div>
+
+          {/* Title */}
+          <span style={{ fontSize: 32, color: '#9ca3af' }}>
             {personalInfo.title}
           </span>
-          <div style={{ display: 'flex', gap: 12, marginTop: 16, flexWrap: 'wrap' }}>
+
+          {/* Tech pills */}
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
             {['React.js', 'Next.js', 'TypeScript', 'PHP / Symfony'].map((tech) => (
               <span
                 key={tech}
                 style={{
-                  padding: '6px 18px',
+                  padding: '6px 20px',
                   background: 'rgba(0,212,170,0.1)',
                   border: '1px solid rgba(0,212,170,0.3)',
                   borderRadius: 999,
                   color: '#00d4aa',
-                  fontSize: 16,
+                  fontSize: 18,
                 }}
               >
                 {tech}
