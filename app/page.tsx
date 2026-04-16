@@ -2,6 +2,7 @@ import { Navbar, Footer } from '@/components/layout'
 import {
   HeroSection,
   AboutSection,
+  EducationSection,
   ExperienceSection,
   ProjectsSection,
   SkillsSection,
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
+        <EducationSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
