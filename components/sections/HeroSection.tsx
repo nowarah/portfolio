@@ -45,6 +45,9 @@ export function HeroSection() {
           <Button href="#experience" variant="outline">
             Experience
           </Button>
+          <Button href="#projects" variant="outline">
+            Key Projects
+          </Button>
         </div>
 
         {/* Stats */}
