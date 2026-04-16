@@ -41,7 +41,7 @@ export const experiences = [
     company: "Libyana Mobile Phone | Tripoli, Libya",
     period: "Oct 2024 – Aug 2025",
     description: [
-      "Developed and maintained an internal HR system for employee management using .NET Core MVC and Blazor, integrating with backend REST APIs.",
+      "Developed and maintained an internal HR system for employee management using .NET Core MVC and Razor, integrating with backend REST APIs.",
       "Built a voucher sales management platform to handle internal sales operations and product distribution workflows.",
       "Developed a sales analytics platform providing real-time reporting and insights for internal stakeholders.",
       "Contributed to an ERPNext implementation project using Python, extending and customising modules to fit internal business requirements.",
