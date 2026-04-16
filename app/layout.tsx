@@ -5,12 +5,18 @@ import { personalInfo } from '@/lib/data'
 export const metadata: Metadata = {
   title: `${personalInfo.name} | ${personalInfo.title}`,
   description: personalInfo.shortBio,
-  keywords: ['Full Stack Developer', 'Web Developer', 'Vue.js', '.NET Core', 'React', 'Frontend Developer'],
+  keywords: ['Full Stack Developer', 'Web Developer', 'React.js', 'Next.js', 'TypeScript', 'PHP', 'Symfony', 'Frontend Developer'],
   authors: [{ name: personalInfo.name }],
   openGraph: {
     title: `${personalInfo.name} | ${personalInfo.title}`,
     description: personalInfo.shortBio,
     type: 'website',
+    images: [{ width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${personalInfo.name} | ${personalInfo.title}`,
+    description: personalInfo.shortBio,
   },
 }
 
