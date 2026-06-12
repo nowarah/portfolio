@@ -14,6 +14,7 @@ export const personalInfo = {
 
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/nuwara/",
+  email: "nuwarah.kh@gmail.com"
 };
 
 export const stats = [

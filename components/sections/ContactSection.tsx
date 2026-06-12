@@ -1,6 +1,6 @@
 import { socialLinks } from '@/lib/data'
 import { SectionHeader } from '@/components/ui'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Mail } from 'lucide-react'
 
 interface ContactLinkProps {
   icon: React.ReactNode
@@ -62,7 +62,12 @@ export function ContactSection() {
             href={socialLinks.linkedin}
             target="_blank"
           />
-
+        <ContactLink
+            icon={<Mail className="text-accent" size={24} />}
+            label="Email"
+            value={socialLinks.email}
+            href={`mailto:${socialLinks.email}`}
+          />
 
         </div>
       </div>
