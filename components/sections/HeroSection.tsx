@@ -20,7 +20,6 @@ export function HeroSection() {
           style={{ animationDelay: '0.4s' }}
         >
           {personalInfo.firstName.toUpperCase()}<br />
-          {personalInfo.lastName.toUpperCase()}
         </h1>
 
         {/* Description */}

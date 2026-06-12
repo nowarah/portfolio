@@ -5,7 +5,6 @@
 export const personalInfo = {
   name: "Nuwarah Khalafullah",
   firstName: "Nuwarah",
-  lastName: "Khalaf",
   title: "Full Stack Developer",
   bio: "Full Stack Developer crafting scalable web applications with React.js, Next.js, TypeScript, PHP, Symfony, and modern technologies.",
   shortBio: "Full Stack Developer with 4+ years of experience building scalable web applications. Strong background in clean code, SOLID principles, API design, and agile teamwork.",
