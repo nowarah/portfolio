@@ -43,7 +43,7 @@ export function Navbar() {
       `}>
         {/* Logo */}
         <a href="#home" className="font-mono text-xl font-bold text-accent">
-          {personalInfo.firstName[0]}{personalInfo.lastName[0]}
+          {personalInfo.firstName[0]}
           <span className="text-white">.</span>
         </a>
 
